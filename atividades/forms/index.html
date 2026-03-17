@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - HTML</title>
+</head>
+<body>
+    <h2>CADASTRO DO CANDIDATO</h2>
+    <section>
+        <form action="resposta.html" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <div>
+
+                        <label for="id-nome">Nome:</label><br>
+                        <input type="text" id="id-nome" name="usuario_nome" placeholder="Digite seu nome..."><br>
+                    </div>
+                    
+                    <div>
+
+                        <label for="id-email">Email:</label><br>
+                        <input type="email" name="usuario_email" id="id-email" placeholder="Digite seu email...">
+                    </div>
+                    
+                    <div>
+                        <label for="nasc">Nascimento:</label>
+                        <input type="date" id = "nasc" name="usuario_nascimento">
+                    </div>
+                    
+                    <div>
+                        <label for="celular">Telefone:</label><br>
+                        <input type="tel" name="usuario_telefone" id="celular" placeholder="Digite seu telefone...">
+                    </div>
+
+                    <div>
+
+                    <p>Genêro: </p>
+                    <input type="radio" id="homem" name="genero" value="homem">
+                    <label for="homem">Homem</label>
+
+                    <input type="radio" id="mulher" name="genero" value="mulher">
+                    <label for="mulher">Mulher</label>
+
+                    <input type="radio" id="outro" name="genero" value="outro"> 
+                    <label for="outro">Outro</label>
+                    
+                </div>
+
+                    
+            </fieldset>
+                    
+            <fieldset>
+                <legend>Habilidades</legend>
+
+                
+                <div>
+
+                    <p>Tecnologias: </p>
+                    <input type="checkbox" name="stack-java" id="id-java" value="Java">
+                    <label for="id-java">Java</label>
+
+                    <input type="checkbox" name="stack-python" id="id-python" value="Python">
+                    <label for="id-python">Python</label>
+
+                    <input type="checkbox" name="stack-js" id="id-js" value="JavaScript">
+                    <label for="id-js">JavaScript</label>
+
+                    <input type="checkbox" name="stack-git" id="id-git" value="Git">
+                    <label for="id-git">Git</label>
+                    
+                    <input type="checkbox" name="stack-linux" id="id-linux" value="Linux">
+                    <label for="id-linux">Linux</label>
+                </div>
+              
+                <div>
+
+                  <label for="quantidade">Quanto você está apto a ser QA(entre 1 e 5):</label>
+                  <input type="number" id="quantidade" name="usuario_aptidao" min="1" max="5">
+                </div>  
+                
+                <div>
+
+                    <label for="volu">Qual a sua proficiência em inglês (0 a 100):</label>
+                    <input type="range" id="volu" name="usuario_ingles" min="0" max="100">
+                </div>
+                
+               
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências de Trabalho</legend>
+                <div>
+                    <label for="preferencia">Qual o seu modelo de trabalho preferido?</label><br>
+                    <select name="preferencia_trabalho" id="preferencia">
+                        <option value="remoto">Remoto</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observaões</legend>
+                <div>
+
+                    <label for="observacoes">Deixe aqui suas observações ou comentários:</label><br>
+                    <textarea id="observacoes" name="usuario_observacoes" rows="4" cols="50" placeholder="Digite suas observações..."></textarea>
+                </div>
+            </fieldset>
+
+
+             <input type="submit" value="Enviar">
+             <input type="reset" name="reset" id="id-reset" value="Limpar">
+         
+          
+        </form>
+    </section>
+    
+</body>
+</html>
