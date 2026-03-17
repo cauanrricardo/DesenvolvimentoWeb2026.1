@@ -1,3 +1,0 @@
-Cauan Ricardo 569566
-atv01 = atividade 01
-atv02 = atividade 02
