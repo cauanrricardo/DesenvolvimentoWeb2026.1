@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Agendamento</title>
+  </head>
+  <body>
+    <header>
+      <h1>Agendamento de Consultoria</h1>
+      <label for="busca-servico">Buscar por serviços:</label>
+      <input
+        type="search"
+        id="busca-servico"
+        list="sugestoes"
+        placeholder="Ex: Consultoria..."
+      />
+
+      <datalist id="sugestoes">
+        <option value="Consultoria"></option>
+        <option value="Audit"></option>
+        <option value="Contabilidade"></option>
+        <option value="Advocacia"></option>
+      </datalist>
+    </header>
+
+    <main>
+      <section>
+        <h2>Status do Consultor</h2>
+        <p>Nível de ocupação da agenda:</p>
+        <meter
+          id="status-agenda"
+          min="0"
+          max="100"
+          low="30"
+          high="80"
+          optimum="20"
+          value="25"
+        ></meter>
+
+        <h3>Localização</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15943.435730302324!2d-39.0160133!3d-4.9634934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Formulário de Agendamento</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="user-email">E-mail:</label>
+            <input type="email" id="user-email" name="user-email" required />
+          </p>
+
+          <p>
+            <label for="user-tel">Telefone de Contato:</label>
+            <input type="tel" id="user-tel" name="user-tel" />
+          </p>
+
+          <p>
+            <label for="user-url">Link do LinkedIn/Site:</label>
+            <input type="url" id="user-url" name="user-url" />
+          </p>
+
+          <p>
+            <label for="qtd-horas">Quantidade de Horas:</label>
+            <input type="number" id="qtd-horas" name="qtd-horas" min="1" />
+          </p>
+
+          <p>
+            <label for="nivel-urgencia">Nível de Urgência (1 a 10):</label>
+            <input
+              type="range"
+              id="nivel-urgencia"
+              name="nivel-urgencia"
+              min="1"
+              max="10"
+            />
+          </p>
+
+          <p>
+            <label for="cor-projeto">Cor da Identidade Visual:</label>
+            <input type="color" id="cor-projeto" name="cor-projeto" />
+          </p>
+
+          <p>
+            <label for="data-reuniao">Data da Primeira Reunião:</label>
+            <input type="date" id="data-reuniao" name="data-reuniao" />
+          </p>
+
+          <p>
+            <label for="mes-faturamento">Mês de Faturamento:</label>
+            <input type="month" id="mes-faturamento" name="mes-faturamento" />
+          </p>
+
+          <p>
+            <label for="semana-inicio">Semana de Início:</label>
+            <input type="week" id="semana-inicio" name="semana-inicio" />
+          </p>
+
+          <p>
+            <label for="hora-inicio">Horário de Início:</label>
+            <input type="time" id="hora-inicio" name="hora-inicio" />
+          </p>
+
+          <p>
+            <label for="checkin-emergencia">Check-in de Emergência:</label>
+            <input
+              type="datetime-local"
+              id="checkin-emergencia"
+              name="checkin-emergencia"
+            />
+          </p>
+
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Cauan Ricardo - Desenvolvimento Web</p>
+    </footer>
+  </body>
+</html>
