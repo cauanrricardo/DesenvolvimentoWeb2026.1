@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #be9898;
+}
+
+.pagina {
+  background-color: #f000cc;
+}
+
+.titulo-principal {
+  background-color: #bd19a4;
+}
+
+.bloco-texto {
+  color: #0f0f0f;
+}
+
+.conteudo {
+  color: #ff5733;
+}
+
+.texto-destaque {
+  color: #200580;
+}
