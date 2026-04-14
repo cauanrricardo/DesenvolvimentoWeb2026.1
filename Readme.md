@@ -1,6 +1,6 @@
 # Desenvolvimento Web 2026.1 - UFC Quixadá
 
-Este repositório contém as atividades, exercícios e projetos desenvolvidos durante a disciplina de Desenvolvimento Web no semestre 2026.1, ministrada pelo professor **SIDARTHA**
+Este repositório contém as atividades, exercícios e projetos desenvolvidos durante a disciplina de Desenvolvimento Web no semestre 2026.1, ministrada pelo professor **SIDARTHA**, durante os dias de segunda e terça, ás 13:30 ás 15:30
 
 
 ## 📂 Estrutura do Repositório
