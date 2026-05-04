@@ -12,7 +12,7 @@ body {
 }
 
 .bloco-texto {
-  color: #0f0f0f;
+  color: #ffffff;
 }
 
 .conteudo {
@@ -21,4 +21,8 @@ body {
 
 .texto-destaque {
   color: #200580;
+}
+
+.bloco-texto h2 {
+  color: #000000;
 }
