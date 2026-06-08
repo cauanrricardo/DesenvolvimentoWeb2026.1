@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 3 - Lista de Alunos</title>
+    <style>
+      .destaque-par {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>João</li>
+      <li>Maria</li>
+      <li>Pedro</li>
+      <li>Ana</li>
+      <li>Lucas</li>
+      <li>Beatriz</li>
+    </ul>
+
+    <script>
+      const alunos = document.querySelectorAll("ul li");
+
+      for (let i = 0; i < alunos.length; i++) {
+        if ((i + 1) % 2 === 0) {
+          alunos[i].classList.add("destaque-par");
+        }
+      }
+    </script>
+  </body>
+</html>

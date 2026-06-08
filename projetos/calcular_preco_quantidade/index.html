@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de produto</title>
+  </head>
+  <body>
+    <h1>Calculadora de produto</h1>
+
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" min="0" step="0.01" />
+
+    <br /><br />
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" min="0" />
+
+    <p>Total: R$ <span id="total">0.00</span></p>
+
+    <script>
+      const campoPreco = document.getElementById("preco");
+      const campoQuantidade = document.getElementById("quantidade");
+      const total = document.getElementById("total");
+
+      function calcularTotal() {
+        const preco = Number(campoPreco.value); // NUMBER converte valor digitado p numero
+        const quantidade = Number(campoQuantidade.value);
+
+        const resultado = preco * quantidade;
+
+        total.innerText = resultado.toFixed(2); // 2 CASAS decimais
+      }
+
+      campoPreco.addEventListener("input", calcularTotal); //executa função toda vez que o valor do campo for alterado
+      campoQuantidade.addEventListener("input", calcularTotal);
+    </script>
+  </body>
+</html>

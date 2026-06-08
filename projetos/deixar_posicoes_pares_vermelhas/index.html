@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de alunos</title>
+
+    <style>
+      .vermelho {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alunos</h1>
+
+    <ul>
+      <li>Ana</li>
+      <li>Bruno</li>
+      <li>Carlos</li>
+      <li>Daniela</li>
+      <li>Eduardo</li>
+      <li>Fernanda</li>
+    </ul>
+
+    <script>
+      const alunos = document.querySelectorAll("li");
+
+      for (let i = 0; i < alunos.length; i++) {
+        const posicaoNaLista = i + 1;
+
+        if (posicaoNaLista % 2 === 0) {
+          alunos[i].classList.add("vermelho");
+        }
+      }
+    </script>
+  </body>
+</html>
