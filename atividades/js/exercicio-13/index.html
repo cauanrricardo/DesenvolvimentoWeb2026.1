@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data atual</title>
+  </head>
+  <body>
+    <button id="botao-data">Mostrar data</button>
+
+    <p id="resultado"></p>
+
+    <script>
+      const botao = document.getElementById("botao-data");
+      const resultado = document.getElementById("resultado");
+
+      botao.addEventListener("click", function () {
+        resultado.innerText = Date();
+      });
+    </script>
+  </body>
+</html>

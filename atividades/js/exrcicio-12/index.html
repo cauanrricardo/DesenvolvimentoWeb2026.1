@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventos</title>
+  </head>
+  <body>
+    <button id="botao">Clique aqui</button>
+
+    <p id="mensagem">Mensagem inicial</p>
+
+    <script>
+      const botao = document.getElementById("botao");
+      const mensagem = document.getElementById("mensagem");
+
+      botao.addEventListener("click", function () {
+        mensagem.innerText = "O botão foi clicado!";
+        mensagem.style.backgroundColor = "green";
+        mensagem.style.color = "white";
+      });
+    </script>
+  </body>
+</html>
