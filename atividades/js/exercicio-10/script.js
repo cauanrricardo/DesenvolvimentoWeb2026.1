@@ -5,9 +5,9 @@ class Aluno {
   }
   verificarSituacao() {
     if (this.nota >= 7) {
-      console.log("Aprovado");
+      console.log(`${this.nome} : Aprovado com nota:  ${this.nota}`);
     } else {
-      console.log("Reprovado");
+      console.log(`${this.nome} : Reprovado com nota:  ${this.nota}`);
     }
   }
 }
